@@ -19,7 +19,7 @@ def keep_alive():
     threading.Thread(target=lambda: app.run(host='0.0.0.0', port=port)).start()
 
 # ---- Discord Token ----
-TOKEN = os.environ.get("MTQ3ODg5NDAzNjIzOTc4MjA3OQ.GnN7HM.7PNl7ZonpLTbZqIhEHWiyqsiZ0D6KtqGcyTyAU")
+TOKEN = "MTQ3ODg5NDAzNjIzOTc4MjA3OQ.GnN7HM.7PNl7ZonpLTbZqIhEHWiyqsiZ0D6KtqGcyTyAU"
 if TOKEN is None:
     raise ValueError("TOKEN environment variable not found! Set it in Railway.")
 
